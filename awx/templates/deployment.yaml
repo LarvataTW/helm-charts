@@ -40,6 +40,9 @@ spec:
           volumeMounts:
             - mountPath: /etc/tower
               name: {{ include "awx.fullname" . }}-application-config
+            - name: {{ include "awx.fullname" . }}-monkey-patch
+              mountPath: /var/lib/awx/venv/awx/lib64/python3.6/site-packages/awx/playbooks/project_update.yml
+              subPath: project_update.yml
           env:
             - name: DATABASE_USER
               value: {{ .Values.postgresql.postgresqlUsername }}
@@ -64,6 +67,9 @@ spec:
           volumeMounts:
             - mountPath: /etc/tower
               name: {{ include "awx.fullname" . }}-application-config
+            - name: {{ include "awx.fullname" . }}-monkey-patch
+              mountPath: /var/lib/awx/venv/awx/lib64/python3.6/site-packages/awx/playbooks/project_update.yml
+              subPath: project_update.yml
           env:
             - name: DATABASE_USER
               value: {{ .Values.postgresql.postgresqlUsername }}
@@ -99,3 +105,6 @@ spec:
                 path: settings.py
               - key: secret_key
                 path: SECRET_KEY
+        - name: {{ include "awx.fullname" . }}-monkey-patch
+          configMap:
+            name: {{ include "awx.fullname" . }}-monkey-patch
