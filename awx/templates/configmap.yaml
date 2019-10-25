@@ -120,7 +120,8 @@ metadata:
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 data:
-  project_update.yml: |
+  project_update.yml: |-
+    {{`
     ---
     # The following variables will be set by the runner of this playbook:
     # project_path: PROJECTS_DIR/_local_path_
@@ -275,3 +276,4 @@ data:
 
           when: collections_enabled|bool
           delegate_to: localhost
+    `}}
