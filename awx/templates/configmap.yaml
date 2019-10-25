@@ -106,6 +106,7 @@ data:
     }
 
     USE_X_FORWARDED_PORT = True
+---
 
 ### configmap for monkey patch ###
 
