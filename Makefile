@@ -21,6 +21,7 @@ dependency: ## 取得相依的 Charts
 .PHONY: package
 package: ## 打包各個 Chart
 	$(MAKE) dependency
+	mkdir -p $(TGZ_DIR)
 	@$(foreach chart,$(CHARTS),cd $(chart) && helm package . -d $(TGZ_DIR) && cd ..;)
 
 .PHONY: release
@@ -28,7 +29,7 @@ release: ## 更新 Github Page
 	$(MAKE) package
 	git checkout gh-pages
 	git rm -rf *.tgz
-	cp -iv $(TGZ_DIR)/*tgz .
+	mv -iv $(TGZ_DIR)/*tgz .
 	helm repo index . --url https://larvatatw.github.io/helm-charts/
 	git add . -m "release: $(shell date)"
 	git push --set-upstream origin gh-pages
