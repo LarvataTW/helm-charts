@@ -34,6 +34,7 @@ release: ## 更新 Github Page
 	git commit -a -m "release: $(shell date)"
 	git push --set-upstream origin gh-pages
 	git checkout master
+	$(MAKE) clean
 
 .PHONY: clean
 clean: ## 清理 tgz 檔案
