@@ -28,7 +28,7 @@ package: ## 打包各個 Chart
 release: ## 更新 Github Page
 	$(MAKE) package
 	git checkout gh-pages
-	git rm -rf *.tgz
+	git clean -f -d .
 	mv -iv $(TGZ_DIR)/*tgz .
 	helm repo index . --url https://larvatatw.github.io/helm-charts/
 	git add . -m "release: $(shell date)"
