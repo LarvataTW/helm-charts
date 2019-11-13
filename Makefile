@@ -31,7 +31,7 @@ release: ## 更新 Github Page
 	git clean -f -d .
 	mv -iv $(TGZ_DIR)/*tgz .
 	helm repo index . --url https://larvatatw.github.io/helm-charts/
-	git add . -m "release: $(shell date)"
+	git commit -a -m "release: $(shell date)"
 	git push --set-upstream origin gh-pages
 	git checkout master
 
