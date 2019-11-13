@@ -1,2 +1,9 @@
-awx/charts/*
-!awx/charts/.gitkeep
+
+# Created by https://www.gitignore.io/api/helm
+# Edit at https://www.gitignore.io/?templates=helm
+
+### Helm ###
+# Chart dependencies
+**/charts/*.tgz
+
+# End of https://www.gitignore.io/api/helm
