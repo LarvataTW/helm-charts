@@ -29,7 +29,7 @@ release: ## 更新 Github Page
 	$(MAKE) package
 	git checkout gh-pages
 	git clean -f -d .
-	mv -iv $(TGZ_DIR)/*tgz .
+	mv -v $(TGZ_DIR)/*tgz .
 	helm repo index . --url https://larvatatw.github.io/helm-charts/
 	git add -f *.tgz index.yaml
 	git commit -m "release: $(shell date)"
