@@ -1,0 +1,85 @@
+apiVersion: v1
+entries:
+  adminer:
+  - apiVersion: v1
+    appVersion: 4.7.3
+    created: "2019-11-13T23:07:37.357851+08:00"
+    description: A Helm chart for Adminer
+    digest: e38f0b4f320e47b1b2ef9da179df41f9f08baf7c86bd18d40647c8b8fa68ae9a
+    home: https://www.adminer.org
+    maintainers:
+    - email: garridomota@gmail.com
+      name: mogaal
+    name: adminer
+    urls:
+    - https://larvatatw.github.io/helm-charts/adminer-0.2.0.tgz
+    version: 0.2.0
+  awx:
+  - apiVersion: v1
+    appVersion: 8.0.0
+    created: "2019-11-13T23:07:37.359698+08:00"
+    description: A Helm chart for Kubernetes
+    digest: de859bcc368d53b34e709b43af7eb34fc52c7ef41ae36c3ca53c05d598637cc3
+    name: awx
+    urls:
+    - https://larvatatw.github.io/helm-charts/awx-0.3.0.tgz
+    version: 0.3.0
+  openproject:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-11-13T23:07:37.360019+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 2b3ed8c9fbea6a347d7d79d445cbcc425b260eacbd3fa5527de2319a50ee9ca0
+    name: openproject
+    urls:
+    - https://larvatatw.github.io/helm-charts/openproject-0.1.0.tgz
+    version: 0.1.0
+  prometheus-yace-exporter:
+  - apiVersion: v1
+    appVersion: 0.13.7
+    created: "2019-11-13T23:07:37.360544+08:00"
+    description: A Helm chart for YACE exporter
+    digest: 713a71c5d115949a83038856d1ea0d6cd06d9b5e0c5460d9c855d5280796c952
+    home: https://github.com/ivx/yet-another-cloudwatch-exporter
+    keywords:
+    - aws
+    - cloudwatch
+    - prometheus
+    - exporter
+    maintainers:
+    - email: garridomota@gmail.com
+      name: mogaal
+    name: prometheus-yace-exporter
+    sources:
+    - https://github.com/ivx/yet-another-cloudwatch-exporter
+    urls:
+    - https://larvatatw.github.io/helm-charts/prometheus-yace-exporter-0.1.0.tgz
+    version: 0.1.0
+  redmine:
+  - apiVersion: v1
+    appVersion: 4.0.5
+    created: "2019-11-13T23:07:37.365815+08:00"
+    description: A flexible project management web application.
+    digest: b08636a0954599c38a8ee9462b2b3b3c3d49dd1a2a4a69e7aeb96fa282d3f2fd
+    engine: gotpl
+    home: http://www.redmine.org/
+    icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
+    keywords:
+    - redmine
+    - project management
+    - www
+    - http
+    - web
+    - application
+    - ruby
+    - rails
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: redmine
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redmine
+    urls:
+    - https://larvatatw.github.io/helm-charts/redmine-12.2.12.tgz
+    version: 12.2.12
+generated: "2019-11-13T23:07:37.356814+08:00"
