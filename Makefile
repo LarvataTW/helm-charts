@@ -36,6 +36,7 @@ release: ## 更新 Github Page
 	git push --set-upstream origin gh-pages
 	git checkout master
 	$(MAKE) clean
+	helm repo update
 
 .PHONY: clean
 clean: ## 清理 tgz 檔案
