@@ -3,9 +3,9 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2019-11-13T23:30:06.146756+08:00"
+    created: "2019-11-14T10:14:22.253401+08:00"
     description: A Helm chart for Adminer
-    digest: dd83782c1e05a460996079877d461a4241c1e443a385951397a365030d252470
+    digest: 7b8c4049cf3a5e0fc8f0a619dbdd1c89205e8b0e96dc694cd6be6556d17f4e69
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
@@ -17,9 +17,9 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2019-11-13T23:30:06.148971+08:00"
+    created: "2019-11-14T10:14:22.255938+08:00"
     description: A Helm chart for Kubernetes
-    digest: 4fb9670385f83827c6768508ae121832e580889d122c50f9b1a9651ece2b7236
+    digest: 468ed284cb45b6f30a604b40de81fa17494d32076d1c1110038d2a6d16968c0a
     name: awx
     urls:
     - https://larvatatw.github.io/helm-charts/awx-0.3.0.tgz
@@ -27,9 +27,9 @@ entries:
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-13T23:30:06.149279+08:00"
-    description: A Helm chart for Kubernetes
-    digest: 01341fe4b1f1ce38d06f510fe8cba40f893e25bf07bde900c2d979206877195f
+    created: "2019-11-14T10:14:22.256298+08:00"
+    description: A Helm chart that install OpenProject
+    digest: a196ff68533cf75aa7a74f3a4f0ef3ebcec928bb26e09ddc86b8d31f9169e2ae
     name: openproject
     urls:
     - https://larvatatw.github.io/helm-charts/openproject-0.1.0.tgz
@@ -37,9 +37,9 @@ entries:
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2019-11-13T23:30:06.149723+08:00"
+    created: "2019-11-14T10:14:22.256758+08:00"
     description: A Helm chart for YACE exporter
-    digest: c9a21448ccd484edab8414beb4fbf111b9f6ced34729b5507140afecbb6345f3
+    digest: e358dbaa3845d7ddc6aff496770aad5aa99091cceb5176582ea829abe7e57d1e
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -58,9 +58,9 @@ entries:
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2019-11-13T23:30:06.154234+08:00"
+    created: "2019-11-14T10:14:22.260973+08:00"
     description: A flexible project management web application.
-    digest: 3fa8f7f893a7390010b4f2a9439b2f3fbbf403add9faf6a4b3d35c8f3e60eec8
+    digest: 538c24230fb6d7a7c6c2d1be041afd479945dc0ee8f56b06a20e78e86c0678bc
     engine: gotpl
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
@@ -82,4 +82,4 @@ entries:
     urls:
     - https://larvatatw.github.io/helm-charts/redmine-12.2.12.tgz
     version: 12.2.12
-generated: "2019-11-13T23:30:06.146161+08:00"
+generated: "2019-11-14T10:14:22.252837+08:00"
