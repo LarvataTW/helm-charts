@@ -2,7 +2,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{ template "openproject.fullname" . }}
+  name: {{ template "openproject.fullname" . }}-assets
   labels:
     app: {{ template "openproject.fullname" . }}
     chart: {{ template "openproject.chart" . }}
@@ -13,6 +13,25 @@ spec:
     - {{ .Values.persistence.accessMode | quote }}
   resources:
     requests:
-      storage: {{ .Values.persistence.size | quote }}
+      storage: {{ .Values.persistence.assetsSize | quote }}
+  {{ include "openproject.storageClass" . }}
+
+---
+
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ template "openproject.fullname" . }}-pgdata
+  labels:
+    app: {{ template "openproject.fullname" . }}
+    chart: {{ template "openproject.chart" . }}
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+spec:
+  accessModes:
+    - {{ .Values.persistence.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.pgdataSize | quote }}
   {{ include "openproject.storageClass" . }}
 {{- end }}

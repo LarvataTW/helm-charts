@@ -87,7 +87,8 @@ persistence:
   ##
   # storageClass: "-"
   accessMode: ReadWriteOnce
-  size: 200Gi
+  assetsSize: 100Gi
+  pgdataSize: 50Gi
 
 # Environment Variables
 env:

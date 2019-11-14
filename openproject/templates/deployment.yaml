@@ -54,7 +54,14 @@ spec:
       - name: openproject-assets
       {{- if .Values.persistence.enabled }}
         persistentVolumeClaim:
-          claimName: {{ .Values.persistence.existingClaim | default (include "openproject.fullname" .) }}
+          claimName: {{ .Values.persistence.existingClaim | default (include "openproject.fullname" .)-assets }}
+      {{- else }}
+        emptyDir: {}
+      {{- end }}
+      - name: openproject-pgdata
+      {{- if .Values.persistence.enabled }}
+        persistentVolumeClaim:
+          claimName: {{ .Values.persistence.existingClaim | default (include "openproject.fullname" .)-pgdata }}
       {{- else }}
         emptyDir: {}
       {{- end }}
