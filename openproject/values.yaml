@@ -94,3 +94,21 @@ persistence:
 env:
   - name: SECRET_KEY_BASE
     value: 'abcdefghijklmnopqrstuvwxy'
+  - name: EMAIL_DELIVERY_METHOD
+    value: smtp
+  - name: SMTP_ADDRESS
+    value: smtp.gmail.com
+  - name: SMTP_PORT
+    value: 587
+  - name: SMTP_DOMAIN
+    value: my.domain.com
+  - name: SMTP_AUTHENTICATION
+    value: login
+  - name: SMTP_ENABLE_STARTTLS_AUTO
+    value: true
+  - name: SMTP_USER_NAME
+    value: "account"
+  - name: SMTP_PASSWORD
+    value: "password"
+  #- name: DATABASE_URL
+  #  value: "mysql2://user:password@mysql.server:3306/openproject"
