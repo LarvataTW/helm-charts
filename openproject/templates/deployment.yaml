@@ -47,6 +47,17 @@ spec:
           {{- if .Values.env }}
             {{ toYaml .Values.env | nindent 12 }}
           {{- end }}
+          volumeMounts:
+            - name: openproject-assets
+              mountPath: /var/openproject/assets
+      volumes:
+      - name: openproject-assets
+      {{- if .Values.persistence.enabled }}
+        persistentVolumeClaim:
+          claimName: {{ .Values.persistence.existingClaim | default (include "openproject.fullname" .) }}
+      {{- else }}
+        emptyDir: {}
+      {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
@@ -59,14 +70,3 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
     {{- end }}
-      volumeMounts:
-        - name: openproject-assets
-          mountPath: /var/openproject/assets
-      volumes:
-      - name: openproject-assets
-      {{- if .Values.persistence.enabled }}
-        persistentVolumeClaim:
-          claimName: {{ .Values.persistence.existingClaim | default (include "openproject.fullname" .) }}
-      {{- else }}
-        emptyDir: {}
-      {{- end }}
