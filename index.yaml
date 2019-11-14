@@ -3,9 +3,9 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2019-11-14T10:47:17.650133+08:00"
+    created: "2019-11-14T10:59:35.814443+08:00"
     description: A Helm chart for Adminer
-    digest: 5a4dc7d91420ddec49619c9b60a0f75bafbfe704cafbefc5cf755ac6106ec9dd
+    digest: eb81ef7cb196e2c7f2527ba9e1c4b110c7308bf9dd50ee779006d0c25cfd58f9
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
@@ -17,9 +17,9 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2019-11-14T10:47:17.651992+08:00"
+    created: "2019-11-14T10:59:35.816599+08:00"
     description: A Helm chart for Kubernetes
-    digest: 7c69c2d97e1fde3e0b9b0aa8926eec90546481930c7cb69904ce7a51b5f7a0a5
+    digest: 073e9db599d906700e75fa3b322480f358b3385e05eb148236ff80d29128d764
     name: awx
     urls:
     - https://larvatatw.github.io/helm-charts/awx-0.3.0.tgz
@@ -27,7 +27,16 @@ entries:
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-14T10:47:17.652327+08:00"
+    created: "2019-11-14T10:59:35.817205+08:00"
+    description: A Helm chart that install OpenProject
+    digest: 93b6e5e9c1492712efcc02340e48dcabc8fe831d9dc00b68115e6db2449638a6
+    name: openproject
+    urls:
+    - https://larvatatw.github.io/helm-charts/openproject-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-11-14T10:59:35.816933+08:00"
     description: A Helm chart that install OpenProject
     digest: fcb275dfd0ce378b259fe375ad0d8fa5e6f17ebaad704accee4607116322062c
     name: openproject
@@ -37,9 +46,9 @@ entries:
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2019-11-14T10:47:17.652822+08:00"
+    created: "2019-11-14T10:59:35.81758+08:00"
     description: A Helm chart for YACE exporter
-    digest: aabb97223721b86e921133c9282b28afe8e7a7c907d7990a6ea93adc4a9ea0f9
+    digest: 45acbd69ee638f433675e778e4c9993eb1ac1963044d1e0660038712fe53ec2f
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -58,9 +67,9 @@ entries:
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2019-11-14T10:47:17.657599+08:00"
+    created: "2019-11-14T10:59:35.8218+08:00"
     description: A flexible project management web application.
-    digest: 6ab33b34870eef9743fdea34e9f96285a56cfbc24a713e2201121f7b23a47a82
+    digest: ae0d0404097e8895344b68e369fbe4b9b9fb0f23430377b9b3346c6c741b0022
     engine: gotpl
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
@@ -82,4 +91,4 @@ entries:
     urls:
     - https://larvatatw.github.io/helm-charts/redmine-12.2.12.tgz
     version: 12.2.12
-generated: "2019-11-14T10:47:17.649197+08:00"
+generated: "2019-11-14T10:59:35.814018+08:00"
