@@ -3,70 +3,79 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2019-11-15T18:02:21.947941+08:00"
+    created: "2019-11-15T16:55:26.554228563Z"
     description: A Helm chart for Adminer
-    digest: 80deda97868403247ac3f1f62ad8beadf940c6723cae1fa37e5debf3bee01bd0
+    digest: 09b519b9c353aabe98c3ed2dd44bf80cb6e7b56c82d783ff779bba6acfa95734
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
       name: mogaal
     name: adminer
     urls:
-    - https://larvatatw.github.io/helm-charts/adminer-0.2.0.tgz
+    - adminer-0.2.0.tgz
     version: 0.2.0
   awx:
   - apiVersion: v1
+    appVersion: 9.0.1
+    created: "2019-11-15T16:55:26.564301149Z"
+    description: Install Ansible AWX
+    digest: 5d99cbdbc368113db67e4118914312166ae858b0581dcd9059bcb57271d191e4
+    name: awx
+    urls:
+    - awx-0.4.2.tgz
+    version: 0.4.2
+  - apiVersion: v1
     appVersion: 9.0.0
-    created: "2019-11-15T18:02:21.954039+08:00"
+    created: "2019-11-15T16:55:26.561977452Z"
     description: Install Ansible AWX
     digest: 6e2b436dcb75f2f44677e0136209e533df2d2756d543541f97c6d55d3d08644f
     name: awx
     urls:
-    - https://larvatatw.github.io/helm-charts/awx-0.4.1.tgz
+    - awx-0.4.1.tgz
     version: 0.4.1
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2019-11-15T18:02:21.952092+08:00"
+    created: "2019-11-15T16:55:26.559812155Z"
     description: Install Ansible AWX
     digest: 6b3bd0f547d3166af054c221de74d1fea512d78b5011cd4bd9a4223affd36303
     name: awx
     urls:
-    - https://larvatatw.github.io/helm-charts/awx-0.4.0.tgz
+    - awx-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2019-11-15T18:02:21.950255+08:00"
+    created: "2019-11-15T16:55:26.55645776Z"
     description: A Helm chart for Kubernetes
     digest: 073e9db599d906700e75fa3b322480f358b3385e05eb148236ff80d29128d764
     name: awx
     urls:
-    - https://larvatatw.github.io/helm-charts/awx-0.3.0.tgz
+    - awx-0.3.0.tgz
     version: 0.3.0
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-15T18:02:21.954744+08:00"
+    created: "2019-11-15T16:55:26.564973349Z"
     description: A Helm chart that install OpenProject
-    digest: 39953a8caafe7f964b8f8b6ccbb9d681e6e808308897f4ae664fb0df7f80a30f
+    digest: 7d97d1e6e022cff1a9a88e060f95a84100b5eb40f7d6924d9ebd0963380fe992
     name: openproject
     urls:
-    - https://larvatatw.github.io/helm-charts/openproject-0.1.1.tgz
+    - openproject-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-15T18:02:21.954384+08:00"
+    created: "2019-11-15T16:55:26.564672649Z"
     description: A Helm chart that install OpenProject
     digest: fcb275dfd0ce378b259fe375ad0d8fa5e6f17ebaad704accee4607116322062c
     name: openproject
     urls:
-    - https://larvatatw.github.io/helm-charts/openproject-0.1.0.tgz
+    - openproject-0.1.0.tgz
     version: 0.1.0
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2019-11-15T18:02:21.955249+08:00"
+    created: "2019-11-15T16:55:26.565543148Z"
     description: A Helm chart for YACE exporter
-    digest: e720ef4219019b98e0c9c2a4c10698ff55a01196dad1fa093c49a4d4117e3a2d
+    digest: 9f21f690a272323795b4892cc3a98d4e56d537c168b8ce086916284b06f39d9e
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -80,14 +89,14 @@ entries:
     sources:
     - https://github.com/ivx/yet-another-cloudwatch-exporter
     urls:
-    - https://larvatatw.github.io/helm-charts/prometheus-yace-exporter-0.1.0.tgz
+    - prometheus-yace-exporter-0.1.0.tgz
     version: 0.1.0
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2019-11-15T18:02:21.959843+08:00"
+    created: "2019-11-15T16:55:26.57148674Z"
     description: A flexible project management web application.
-    digest: df3c8ad04e1a5f7f11f2a012ec845438057b87183e9524978acbf58f24927f90
+    digest: bdc0212582dffc7f1771ac58875603d6d825a43bb0ea49e28df4eb28efc11f1c
     engine: gotpl
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
@@ -107,6 +116,6 @@ entries:
     sources:
     - https://github.com/bitnami/bitnami-docker-redmine
     urls:
-    - https://larvatatw.github.io/helm-charts/redmine-12.2.12.tgz
+    - redmine-12.2.12.tgz
     version: 12.2.12
-generated: "2019-11-15T18:02:21.947456+08:00"
+generated: "2019-11-15T16:55:26.553687363Z"
