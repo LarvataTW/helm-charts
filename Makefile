@@ -5,7 +5,7 @@ SHELL := /bin/bash
 MAKEFLAGS = --jobs=1
 
 # Chart directories
-CHARTS = $(shell ls -d */)
+CHARTS = $(shell ls -d charts/*/)
 TGZ_DIR = /tmp/charts/
 
 .PHONY: init
@@ -15,14 +15,14 @@ init: ## 配置開發環境的相關套件
 
 .PHONY: dependency
 dependency: ## 取得相依的 Charts
-	@$(foreach chart,$(CHARTS),cd $(chart) && helm dependency update && cd ..;)
-	@$(foreach chart,$(CHARTS),cd $(chart) && helm dependency build && cd ..;)
+	@$(foreach chart,$(CHARTS),cd $(chart) && helm dependency update && cd -;)
+	@$(foreach chart,$(CHARTS),cd $(chart) && helm dependency build && cd -;)
 
 .PHONY: package
 package: ## 打包各個 Chart
 	$(MAKE) dependency
 	mkdir -p $(TGZ_DIR)
-	@$(foreach chart,$(CHARTS),cd $(chart) && helm package . -d $(TGZ_DIR) && cd ..;)
+	@$(foreach chart,$(CHARTS),cd $(chart) && helm package . -d $(TGZ_DIR) && cd -;)
 
 .PHONY: release
 release: ## 更新 Github Page
