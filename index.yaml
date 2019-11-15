@@ -3,9 +3,9 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2019-11-15T17:38:17.805296+08:00"
+    created: "2019-11-15T18:02:21.947941+08:00"
     description: A Helm chart for Adminer
-    digest: cff76e3be1a521b020fee40011a5b3355d7cdfb58325e68ca1a531e084ede447
+    digest: 80deda97868403247ac3f1f62ad8beadf940c6723cae1fa37e5debf3bee01bd0
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
@@ -16,8 +16,17 @@ entries:
     version: 0.2.0
   awx:
   - apiVersion: v1
+    appVersion: 9.0.0
+    created: "2019-11-15T18:02:21.954039+08:00"
+    description: Install Ansible AWX
+    digest: 6e2b436dcb75f2f44677e0136209e533df2d2756d543541f97c6d55d3d08644f
+    name: awx
+    urls:
+    - https://larvatatw.github.io/helm-charts/awx-0.4.1.tgz
+    version: 0.4.1
+  - apiVersion: v1
     appVersion: 9.0.1
-    created: "2019-11-15T17:38:17.809458+08:00"
+    created: "2019-11-15T18:02:21.952092+08:00"
     description: Install Ansible AWX
     digest: 6b3bd0f547d3166af054c221de74d1fea512d78b5011cd4bd9a4223affd36303
     name: awx
@@ -26,7 +35,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2019-11-15T17:38:17.807551+08:00"
+    created: "2019-11-15T18:02:21.950255+08:00"
     description: A Helm chart for Kubernetes
     digest: 073e9db599d906700e75fa3b322480f358b3385e05eb148236ff80d29128d764
     name: awx
@@ -36,16 +45,16 @@ entries:
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-15T17:38:17.810177+08:00"
+    created: "2019-11-15T18:02:21.954744+08:00"
     description: A Helm chart that install OpenProject
-    digest: 84a01f5a9c96c3586947ba9ba61afbcbd2840532df4981fad291441ac192f135
+    digest: 39953a8caafe7f964b8f8b6ccbb9d681e6e808308897f4ae664fb0df7f80a30f
     name: openproject
     urls:
     - https://larvatatw.github.io/helm-charts/openproject-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-15T17:38:17.809819+08:00"
+    created: "2019-11-15T18:02:21.954384+08:00"
     description: A Helm chart that install OpenProject
     digest: fcb275dfd0ce378b259fe375ad0d8fa5e6f17ebaad704accee4607116322062c
     name: openproject
@@ -55,9 +64,9 @@ entries:
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2019-11-15T17:38:17.810682+08:00"
+    created: "2019-11-15T18:02:21.955249+08:00"
     description: A Helm chart for YACE exporter
-    digest: d1ba62ed6eb7ee8be64cea760e4536d12be18d1e6573f38c5062e232cb9e6845
+    digest: e720ef4219019b98e0c9c2a4c10698ff55a01196dad1fa093c49a4d4117e3a2d
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -76,9 +85,9 @@ entries:
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2019-11-15T17:38:17.815308+08:00"
+    created: "2019-11-15T18:02:21.959843+08:00"
     description: A flexible project management web application.
-    digest: e87f92bb1a0b183ac11953321c2f34ff81b4a560ef5996e39799472f2082d4b3
+    digest: df3c8ad04e1a5f7f11f2a012ec845438057b87183e9524978acbf58f24927f90
     engine: gotpl
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
@@ -100,4 +109,4 @@ entries:
     urls:
     - https://larvatatw.github.io/helm-charts/redmine-12.2.12.tgz
     version: 12.2.12
-generated: "2019-11-15T17:38:17.804257+08:00"
+generated: "2019-11-15T18:02:21.947456+08:00"
