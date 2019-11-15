@@ -6,13 +6,6 @@ helm repo list
 helm repo update
 ```
 
-## Usage
-
-```
-make
-make release
-```
-
 ## References
 
 * https://github.com/helm/charts
