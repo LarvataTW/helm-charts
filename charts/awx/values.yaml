@@ -53,6 +53,7 @@ memcached:
 rabbitmq:
   install: true
   rabbitmq:
+    setUlimitNofiles: false
     username: awx
     password: awx
     ## Configution file content https://www.rabbitmq.com/configure.html#configuration-files
