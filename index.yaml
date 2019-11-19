@@ -3,9 +3,9 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2019-11-19T15:19:22.641781578Z"
+    created: "2019-11-19T15:40:17.853478696Z"
     description: A Helm chart for Adminer
-    digest: 01cdd29dffe6ab7e6c975b6d1c4051f603f085e75559e3905530244c27e15a61
+    digest: 35f2525c3ab67d1a1351f8fbdd551d1fec5b043920276ead88c891cd112dce74
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
@@ -17,7 +17,16 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2019-11-19T15:19:22.654676807Z"
+    created: "2019-11-19T15:40:17.870662319Z"
+    description: Install Ansible AWX
+    digest: 2170384a443b2f86380be4e8268916fd9f9420397f602297ea918193f9e375a5
+    name: awx
+    urls:
+    - awx-0.4.4.tgz
+    version: 0.4.4
+  - apiVersion: v1
+    appVersion: 7.0.0
+    created: "2019-11-19T15:40:17.867990953Z"
     description: Install Ansible AWX
     digest: b3b5862607b70e62bde25283e8315d7f42c29e3809d0681a4019da9f03e263d3
     name: awx
@@ -26,7 +35,7 @@ entries:
     version: 0.4.3
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2019-11-19T15:19:22.652369002Z"
+    created: "2019-11-19T15:40:17.86544419Z"
     description: Install Ansible AWX
     digest: d3cf9d23022935459baa702bc4812d01fd3978659c791abb4790ea948955497c
     name: awx
@@ -35,7 +44,7 @@ entries:
     version: 0.4.2
   - apiVersion: v1
     appVersion: 9.0.0
-    created: "2019-11-19T15:19:22.649460795Z"
+    created: "2019-11-19T15:40:17.862750224Z"
     description: Install Ansible AWX
     digest: 6e2b436dcb75f2f44677e0136209e533df2d2756d543541f97c6d55d3d08644f
     name: awx
@@ -44,7 +53,7 @@ entries:
     version: 0.4.1
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2019-11-19T15:19:22.64706169Z"
+    created: "2019-11-19T15:40:17.859691249Z"
     description: Install Ansible AWX
     digest: 6b3bd0f547d3166af054c221de74d1fea512d78b5011cd4bd9a4223affd36303
     name: awx
@@ -53,7 +62,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2019-11-19T15:19:22.644735385Z"
+    created: "2019-11-19T15:40:17.856099861Z"
     description: A Helm chart for Kubernetes
     digest: 073e9db599d906700e75fa3b322480f358b3385e05eb148236ff80d29128d764
     name: awx
@@ -63,16 +72,16 @@ entries:
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-19T15:19:22.65574091Z"
+    created: "2019-11-19T15:40:17.871469738Z"
     description: A Helm chart that install OpenProject
-    digest: 5872c181faf1f20601c26fd091b5d33a44a89fe64e579e6fa91722b4b6ac9432
+    digest: 843079339021061eb668f7e85d469053ec507fea51d3f9a0e0142e47bdd2a4b0
     name: openproject
     urls:
     - openproject-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-19T15:19:22.655041208Z"
+    created: "2019-11-19T15:40:17.871051928Z"
     description: A Helm chart that install OpenProject
     digest: fcb275dfd0ce378b259fe375ad0d8fa5e6f17ebaad704accee4607116322062c
     name: openproject
@@ -82,9 +91,9 @@ entries:
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2019-11-19T15:19:22.656402511Z"
+    created: "2019-11-19T15:40:17.872105954Z"
     description: A Helm chart for YACE exporter
-    digest: 35a72623440fed8c14cd4e5502def538fcae38b0918460d47f0382f41eab51ee
+    digest: ec7c3278f4db793b96cf832f104fd23f1c2858205926b0a35aa4f4832e6e9aa3
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -103,9 +112,9 @@ entries:
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2019-11-19T15:19:22.661923124Z"
+    created: "2019-11-19T15:40:17.878477311Z"
     description: A flexible project management web application.
-    digest: 1cf502f5018d7927fd91fe1a38d594675965d73a4fc5837fa4ec985c3aa2e4aa
+    digest: 5ccf14ffc82e2fbce097bc12c52cc95c7964b3a741527e07ca91620decf22fbc
     engine: gotpl
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
@@ -127,4 +136,4 @@ entries:
     urls:
     - redmine-12.2.12.tgz
     version: 12.2.12
-generated: "2019-11-19T15:19:22.640912776Z"
+generated: "2019-11-19T15:40:17.852759279Z"
