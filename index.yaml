@@ -3,9 +3,9 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2019-11-19T15:40:17.853478696Z"
+    created: "2019-11-20T00:45:58.786247889Z"
     description: A Helm chart for Adminer
-    digest: 35f2525c3ab67d1a1351f8fbdd551d1fec5b043920276ead88c891cd112dce74
+    digest: 72ffdf42ff305a2e2fbea461a38e717b36cd43306dc72a8caeb9f4b2f2956dfd
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
@@ -17,7 +17,16 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2019-11-19T15:40:17.870662319Z"
+    created: "2019-11-20T00:45:58.806466252Z"
+    description: Install Ansible AWX
+    digest: 2145920ce0d49891d847713ca2fdba38864663d006188f4ad3a89cb234ff74c6
+    name: awx
+    urls:
+    - awx-0.4.5.tgz
+    version: 0.4.5
+  - apiVersion: v1
+    appVersion: 7.0.0
+    created: "2019-11-20T00:45:58.803601857Z"
     description: Install Ansible AWX
     digest: 2170384a443b2f86380be4e8268916fd9f9420397f602297ea918193f9e375a5
     name: awx
@@ -26,7 +35,7 @@ entries:
     version: 0.4.4
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2019-11-19T15:40:17.867990953Z"
+    created: "2019-11-20T00:45:58.801191662Z"
     description: Install Ansible AWX
     digest: b3b5862607b70e62bde25283e8315d7f42c29e3809d0681a4019da9f03e263d3
     name: awx
@@ -35,7 +44,7 @@ entries:
     version: 0.4.3
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2019-11-19T15:40:17.86544419Z"
+    created: "2019-11-20T00:45:58.798840366Z"
     description: Install Ansible AWX
     digest: d3cf9d23022935459baa702bc4812d01fd3978659c791abb4790ea948955497c
     name: awx
@@ -44,7 +53,7 @@ entries:
     version: 0.4.2
   - apiVersion: v1
     appVersion: 9.0.0
-    created: "2019-11-19T15:40:17.862750224Z"
+    created: "2019-11-20T00:45:58.79657717Z"
     description: Install Ansible AWX
     digest: 6e2b436dcb75f2f44677e0136209e533df2d2756d543541f97c6d55d3d08644f
     name: awx
@@ -53,7 +62,7 @@ entries:
     version: 0.4.1
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2019-11-19T15:40:17.859691249Z"
+    created: "2019-11-20T00:45:58.794096275Z"
     description: Install Ansible AWX
     digest: 6b3bd0f547d3166af054c221de74d1fea512d78b5011cd4bd9a4223affd36303
     name: awx
@@ -62,7 +71,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2019-11-19T15:40:17.856099861Z"
+    created: "2019-11-20T00:45:58.79096398Z"
     description: A Helm chart for Kubernetes
     digest: 073e9db599d906700e75fa3b322480f358b3385e05eb148236ff80d29128d764
     name: awx
@@ -72,16 +81,16 @@ entries:
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-19T15:40:17.871469738Z"
+    created: "2019-11-20T00:45:58.807172751Z"
     description: A Helm chart that install OpenProject
-    digest: 843079339021061eb668f7e85d469053ec507fea51d3f9a0e0142e47bdd2a4b0
+    digest: ed4f4744d7c3122dc29820a8ed09ede93e514eab7f6d44e45a9541831a3111cb
     name: openproject
     urls:
     - openproject-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-11-19T15:40:17.871051928Z"
+    created: "2019-11-20T00:45:58.806811351Z"
     description: A Helm chart that install OpenProject
     digest: fcb275dfd0ce378b259fe375ad0d8fa5e6f17ebaad704accee4607116322062c
     name: openproject
@@ -91,9 +100,9 @@ entries:
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2019-11-19T15:40:17.872105954Z"
+    created: "2019-11-20T00:45:58.808141549Z"
     description: A Helm chart for YACE exporter
-    digest: ec7c3278f4db793b96cf832f104fd23f1c2858205926b0a35aa4f4832e6e9aa3
+    digest: f86558df82b0a3fa22a921757a8aff3c57e2495683f9b6032d2cefa4f3638ce3
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -112,9 +121,9 @@ entries:
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2019-11-19T15:40:17.878477311Z"
+    created: "2019-11-20T00:45:58.815188636Z"
     description: A flexible project management web application.
-    digest: 5ccf14ffc82e2fbce097bc12c52cc95c7964b3a741527e07ca91620decf22fbc
+    digest: 9f26f01752437708dd3b2098a22411e504faab74144d02bdc0aee2988082c4e3
     engine: gotpl
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
@@ -136,4 +145,4 @@ entries:
     urls:
     - redmine-12.2.12.tgz
     version: 12.2.12
-generated: "2019-11-19T15:40:17.852759279Z"
+generated: "2019-11-20T00:45:58.78561849Z"
