@@ -52,6 +52,11 @@ memcached:
 # Chart values https://github.com/helm/charts/blob/master/stable/rabbitmq/values.yaml
 rabbitmq:
   install: true
+  persistence:
+    enabled: true
+    # storageClass: "-"
+    size: 8Gi
+    accessMode: ReadWriteOnce
   rabbitmq:
     username: awx
     password: awx
@@ -88,6 +93,10 @@ postgresql:
   postgresqlDatabase: awx
   persistence:
     enabled: true
+    # storageClass: "-"
+    size: 8Gi
+    accessModes:
+      - ReadWriteOnce
   metrics:
     enabled: false
 
