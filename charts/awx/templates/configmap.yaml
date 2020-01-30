@@ -100,6 +100,18 @@ data:
 
     USE_X_FORWARDED_PORT = True
 
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "awx.fullname" . }}-nginx-config
+  labels:
+    app.kubernetes.io/name: {{ include "awx.name" . }}
+    helm.sh/chart: {{ include "awx.chart" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+data:
   nginx.conf: |
     user root;
     worker_processes auto;
