@@ -40,6 +40,8 @@ spec:
           volumeMounts:
             - mountPath: /etc/tower
               name: {{ include "awx.fullname" . }}-application-config
+            - mountPath: /etc/nginx
+              name: {{ include "awx.fullname" . }}-nginx-config
           env:
             - name: DATABASE_USER
               value: {{ .Values.postgresql.postgresqlUsername }}
@@ -99,3 +101,9 @@ spec:
                 path: settings.py
               - key: secret_key
                 path: SECRET_KEY
+        - name: {{ include "awx.fullname" . }}-nginx-config
+          configMap:
+            name: {{ include "awx.fullname" . }}-nginx-config
+            items:
+              - key: nginx.conf
+                path: nginx.conf
