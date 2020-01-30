@@ -3,9 +3,9 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2020-01-30T07:46:28.055332167Z"
+    created: "2020-01-30T07:50:47.489508598Z"
     description: A Helm chart for Adminer
-    digest: b6e1d674da321f8abbc163e084aa51226b8952c06124de7966068d4a8f4c3578
+    digest: 44dc69b4e4b46ff79382b5a7cd10478e69f08c1f01b53c63aef4603c2a1cfe5f
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
@@ -17,7 +17,16 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-01-30T07:46:28.085671273Z"
+    created: "2020-01-30T07:50:47.521532227Z"
+    description: Install Ansible AWX
+    digest: 952a4fa5a73f14c9faa6caa1ab5e16b8effb864dc9d49165fccfb3427e23491b
+    name: awx
+    urls:
+    - awx-0.6.2.tgz
+    version: 0.6.2
+  - apiVersion: v1
+    appVersion: 9.1.1
+    created: "2020-01-30T07:50:47.519027425Z"
     description: Install Ansible AWX
     digest: f2bfcd5fc44a8792209c24cdd0869c34319814da41861edc9e62af1371f61701
     name: awx
@@ -26,7 +35,7 @@ entries:
     version: 0.6.1
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-01-30T07:46:28.082813972Z"
+    created: "2020-01-30T07:50:47.516499223Z"
     description: Install Ansible AWX
     digest: 25f6a89d40a18d9b8dfaadb99ff8d0477bb5a0f700944a3741120b2046ec3278
     name: awx
@@ -35,7 +44,7 @@ entries:
     version: 0.6.0
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2020-01-30T07:46:28.080464172Z"
+    created: "2020-01-30T07:50:47.51395462Z"
     description: Install Ansible AWX
     digest: a5d5982c919dec57b814c47df6a1eed390af9b21b425fbad40babe96fb677819
     name: awx
@@ -44,7 +53,7 @@ entries:
     version: 0.5.1
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-01-30T07:46:28.078070171Z"
+    created: "2020-01-30T07:50:47.511371418Z"
     description: Install Ansible AWX
     digest: 28d592d2af2abc392c61a1199b002acb31c6d7f4fcaa9678fd39d18d306baa7e
     name: awx
@@ -53,7 +62,7 @@ entries:
     version: 0.4.6
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-01-30T07:46:28.075214871Z"
+    created: "2020-01-30T07:50:47.508496015Z"
     description: Install Ansible AWX
     digest: 2145920ce0d49891d847713ca2fdba38864663d006188f4ad3a89cb234ff74c6
     name: awx
@@ -62,7 +71,7 @@ entries:
     version: 0.4.5
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-01-30T07:46:28.07094487Z"
+    created: "2020-01-30T07:50:47.505114012Z"
     description: Install Ansible AWX
     digest: 2170384a443b2f86380be4e8268916fd9f9420397f602297ea918193f9e375a5
     name: awx
@@ -71,7 +80,7 @@ entries:
     version: 0.4.4
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-01-30T07:46:28.06879647Z"
+    created: "2020-01-30T07:50:47.50272131Z"
     description: Install Ansible AWX
     digest: b3b5862607b70e62bde25283e8315d7f42c29e3809d0681a4019da9f03e263d3
     name: awx
@@ -80,7 +89,7 @@ entries:
     version: 0.4.3
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2020-01-30T07:46:28.066652169Z"
+    created: "2020-01-30T07:50:47.500330908Z"
     description: Install Ansible AWX
     digest: d3cf9d23022935459baa702bc4812d01fd3978659c791abb4790ea948955497c
     name: awx
@@ -89,7 +98,7 @@ entries:
     version: 0.4.2
   - apiVersion: v1
     appVersion: 9.0.0
-    created: "2020-01-30T07:46:28.064409169Z"
+    created: "2020-01-30T07:50:47.497862006Z"
     description: Install Ansible AWX
     digest: 6e2b436dcb75f2f44677e0136209e533df2d2756d543541f97c6d55d3d08644f
     name: awx
@@ -98,7 +107,7 @@ entries:
     version: 0.4.1
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2020-01-30T07:46:28.062098568Z"
+    created: "2020-01-30T07:50:47.495214903Z"
     description: Install Ansible AWX
     digest: 6b3bd0f547d3166af054c221de74d1fea512d78b5011cd4bd9a4223affd36303
     name: awx
@@ -107,7 +116,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2020-01-30T07:46:28.058482968Z"
+    created: "2020-01-30T07:50:47.4918624Z"
     description: A Helm chart for Kubernetes
     digest: 073e9db599d906700e75fa3b322480f358b3385e05eb148236ff80d29128d764
     name: awx
@@ -117,16 +126,16 @@ entries:
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-01-30T07:46:28.086739873Z"
+    created: "2020-01-30T07:50:47.522632128Z"
     description: A Helm chart that install OpenProject
-    digest: 55076f6e08aec68ae1a914e5cc687dc6cffc506efd5d67edd2df2bb8aeb91cee
+    digest: 53fae2773e7fd8f336ed972e42f1762e8e44a604f9a3a640add80a24ff5c2e47
     name: openproject
     urls:
     - openproject-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-01-30T07:46:28.086315673Z"
+    created: "2020-01-30T07:50:47.521885627Z"
     description: A Helm chart that install OpenProject
     digest: fcb275dfd0ce378b259fe375ad0d8fa5e6f17ebaad704accee4607116322062c
     name: openproject
@@ -136,9 +145,9 @@ entries:
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2020-01-30T07:46:28.087257873Z"
+    created: "2020-01-30T07:50:47.523311029Z"
     description: A Helm chart for YACE exporter
-    digest: 915eb5599871f8337eefce9a236cafdff49c946cdf2e3398a06780e32414ab39
+    digest: 92c9b16aa90c7e675d9f5a710e380c3d27e7e8d2fa2b70b4960abb811bf1e7aa
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -157,9 +166,9 @@ entries:
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2020-01-30T07:46:28.092498974Z"
+    created: "2020-01-30T07:50:47.530038335Z"
     description: A flexible project management web application.
-    digest: 078191a642b4b7ffe6da1ac2d3762339c2ca0707a94dc789720ecf146aea9cb3
+    digest: 2755b03faac77f4c3c13011936503ed7dbd2743d14f8c928e895c182cab7889c
     engine: gotpl
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
@@ -181,4 +190,4 @@ entries:
     urls:
     - redmine-12.2.12.tgz
     version: 12.2.12
-generated: "2020-01-30T07:46:28.054724067Z"
+generated: "2020-01-30T07:50:47.488947998Z"
