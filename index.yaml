@@ -3,9 +3,9 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2020-01-30T10:09:33.370455347Z"
+    created: "2020-02-05T08:43:22.810401764Z"
     description: A Helm chart for Adminer
-    digest: 37688672386421d03db48c8a51b7f866081305c8af5e183cb5279e1f501fde07
+    digest: 35a793c84913254189fab274bf3bbe4f07a84136895a6de3102b9d4b644230f0
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
@@ -17,7 +17,16 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-01-30T10:09:33.413244197Z"
+    created: "2020-02-05T08:43:22.857970816Z"
+    description: Install Ansible AWX
+    digest: 8734b7f9f90ba6e2e26999a44084a0cfe6d849b7c36de46ea55f241497ba64d7
+    name: awx
+    urls:
+    - awx-0.6.7.tgz
+    version: 0.6.7
+  - apiVersion: v1
+    appVersion: 9.1.1
+    created: "2020-02-05T08:43:22.85402998Z"
     description: Install Ansible AWX
     digest: c13d132a8990fc56a6493c8d7f7fdd4c316f21594d0d26f14cf54cde8a16b111
     name: awx
@@ -26,7 +35,7 @@ entries:
     version: 0.6.6
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-01-30T10:09:33.410207251Z"
+    created: "2020-02-05T08:43:22.851505429Z"
     description: Install Ansible AWX
     digest: 2db0f52c90b17da11620dd82ed69f89f580bed29cd08f3eb441c2fab2a1b2053
     name: awx
@@ -35,7 +44,7 @@ entries:
     version: 0.6.5
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-01-30T10:09:33.407747833Z"
+    created: "2020-02-05T08:43:22.848979177Z"
     description: Install Ansible AWX
     digest: e37548eee02f4ececb91171b5b3fb8a4525a97a702222d5e967e01f725249a39
     name: awx
@@ -44,7 +53,7 @@ entries:
     version: 0.6.4
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-01-30T10:09:33.405456924Z"
+    created: "2020-02-05T08:43:22.846548831Z"
     description: Install Ansible AWX
     digest: 2fd056c399bfe2d3c9daed508f4ec75e510189d2fd671e3849a39197247f8781
     name: awx
@@ -53,7 +62,7 @@ entries:
     version: 0.6.3
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-01-30T10:09:33.403015107Z"
+    created: "2020-02-05T08:43:22.844033381Z"
     description: Install Ansible AWX
     digest: 952a4fa5a73f14c9faa6caa1ab5e16b8effb864dc9d49165fccfb3427e23491b
     name: awx
@@ -62,7 +71,7 @@ entries:
     version: 0.6.2
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-01-30T10:09:33.399220825Z"
+    created: "2020-02-05T08:43:22.840103945Z"
     description: Install Ansible AWX
     digest: f2bfcd5fc44a8792209c24cdd0869c34319814da41861edc9e62af1371f61701
     name: awx
@@ -71,7 +80,7 @@ entries:
     version: 0.6.1
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-01-30T10:09:33.396320086Z"
+    created: "2020-02-05T08:43:22.837613496Z"
     description: Install Ansible AWX
     digest: 25f6a89d40a18d9b8dfaadb99ff8d0477bb5a0f700944a3741120b2046ec3278
     name: awx
@@ -80,7 +89,7 @@ entries:
     version: 0.6.0
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2020-01-30T10:09:33.393724862Z"
+    created: "2020-02-05T08:43:22.835086044Z"
     description: Install Ansible AWX
     digest: a5d5982c919dec57b814c47df6a1eed390af9b21b425fbad40babe96fb677819
     name: awx
@@ -89,7 +98,7 @@ entries:
     version: 0.5.1
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-01-30T10:09:33.391370049Z"
+    created: "2020-02-05T08:43:22.832567693Z"
     description: Install Ansible AWX
     digest: 28d592d2af2abc392c61a1199b002acb31c6d7f4fcaa9678fd39d18d306baa7e
     name: awx
@@ -98,7 +107,7 @@ entries:
     version: 0.4.6
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-01-30T10:09:33.388950633Z"
+    created: "2020-02-05T08:43:22.830087644Z"
     description: Install Ansible AWX
     digest: 2145920ce0d49891d847713ca2fdba38864663d006188f4ad3a89cb234ff74c6
     name: awx
@@ -107,7 +116,7 @@ entries:
     version: 0.4.5
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-01-30T10:09:33.385892886Z"
+    created: "2020-02-05T08:43:22.826854951Z"
     description: Install Ansible AWX
     digest: 2170384a443b2f86380be4e8268916fd9f9420397f602297ea918193f9e375a5
     name: awx
@@ -116,7 +125,7 @@ entries:
     version: 0.4.4
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-01-30T10:09:33.383210058Z"
+    created: "2020-02-05T08:43:22.823925375Z"
     description: Install Ansible AWX
     digest: b3b5862607b70e62bde25283e8315d7f42c29e3809d0681a4019da9f03e263d3
     name: awx
@@ -125,7 +134,7 @@ entries:
     version: 0.4.3
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2020-01-30T10:09:33.380480527Z"
+    created: "2020-02-05T08:43:22.821164809Z"
     description: Install Ansible AWX
     digest: d3cf9d23022935459baa702bc4812d01fd3978659c791abb4790ea948955497c
     name: awx
@@ -134,7 +143,7 @@ entries:
     version: 0.4.2
   - apiVersion: v1
     appVersion: 9.0.0
-    created: "2020-01-30T10:09:33.378218719Z"
+    created: "2020-02-05T08:43:22.818857271Z"
     description: Install Ansible AWX
     digest: 6e2b436dcb75f2f44677e0136209e533df2d2756d543541f97c6d55d3d08644f
     name: awx
@@ -143,7 +152,7 @@ entries:
     version: 0.4.1
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2020-01-30T10:09:33.37595171Z"
+    created: "2020-02-05T08:43:22.816424125Z"
     description: Install Ansible AWX
     digest: 6b3bd0f547d3166af054c221de74d1fea512d78b5011cd4bd9a4223affd36303
     name: awx
@@ -152,7 +161,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2020-01-30T10:09:33.373413689Z"
+    created: "2020-02-05T08:43:22.813411044Z"
     description: A Helm chart for Kubernetes
     digest: 073e9db599d906700e75fa3b322480f358b3385e05eb148236ff80d29128d764
     name: awx
@@ -162,16 +171,16 @@ entries:
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-01-30T10:09:33.414266646Z"
+    created: "2020-02-05T08:43:22.85869096Z"
     description: A Helm chart that install OpenProject
-    digest: 5b63ef6dd898d44dec0915fcb9fce92bc90c3583e15a9d439c06ce2a26482c82
+    digest: 1c24fa5ac3741f953950ad823886e425747103c123df5b66a95e94f234deceae
     name: openproject
     urls:
     - openproject-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-01-30T10:09:33.413866527Z"
+    created: "2020-02-05T08:43:22.858345139Z"
     description: A Helm chart that install OpenProject
     digest: fcb275dfd0ce378b259fe375ad0d8fa5e6f17ebaad704accee4607116322062c
     name: openproject
@@ -181,9 +190,9 @@ entries:
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2020-01-30T10:09:33.414895676Z"
+    created: "2020-02-05T08:43:22.859401202Z"
     description: A Helm chart for YACE exporter
-    digest: cf1b33b7b3a7889d0db206ad79963d40fa3e05571f01807a6200643720d336d5
+    digest: 65c382857b0408cc8c8494492e738d3da8f49b0fb7a7bad02c49749e44f08ae7
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -202,9 +211,9 @@ entries:
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2020-01-30T10:09:33.420015821Z"
+    created: "2020-02-05T08:43:22.86503934Z"
     description: A flexible project management web application.
-    digest: 89ab9da8c604a4445b8f1d14bb58ae283eaff700520d21cbe009da9500560837
+    digest: f24c462f52f94b080dfe058e8ba577697c88cf7d6bb012f2a9c65f05d690dd1d
     engine: gotpl
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
@@ -226,4 +235,4 @@ entries:
     urls:
     - redmine-12.2.12.tgz
     version: 12.2.12
-generated: "2020-01-30T10:09:33.369921721Z"
+generated: "2020-02-05T08:43:22.809854631Z"
