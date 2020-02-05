@@ -40,8 +40,9 @@ spec:
           volumeMounts:
             - mountPath: /etc/tower
               name: {{ include "awx.fullname" . }}-application-config
-            - mountPath: /etc/nginx
+            - mountPath: /etc/nginx/nginx.config
               name: {{ include "awx.fullname" . }}-nginx-config
+              subPath: "nginx.config"
           env:
             - name: DATABASE_USER
               value: {{ .Values.postgresql.postgresqlUsername }}
@@ -92,6 +93,7 @@ spec:
       nodeSelector:
 {{ toYaml .Values.nodeSelector | indent 8 }}
     {{- end }}
+
       volumes:
         - name: {{ include "awx.fullname" . }}-application-config
           configMap:
@@ -104,6 +106,3 @@ spec:
         - name: {{ include "awx.fullname" . }}-nginx-config
           configMap:
             name: {{ include "awx.fullname" . }}-nginx-config
-            items:
-              - key: nginx.conf
-                path: nginx.conf
