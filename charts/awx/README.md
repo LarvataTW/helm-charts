@@ -1,77 +1,28 @@
 # Ansible AWX
 
-Helm deployement of Ansible AWX on Kubernetes
+https://github.com/ansible/awx
 
-## Introduction
+AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is the upstream project for Tower, a commercial derivative of AWX.
 
-This chart bootstraps an [AWX](https://github.com/ansible/awx) deployment on
-a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh)
-package manager.
+Add our repo:
 
-## Installing the Chart
-
-To install the chart with the release name `my-release`:
-
-```console
-helm dep up ./awx
-helm install --name my-release ./awx
+```bash
+helm repo add adwerx https://adwerx.github.io/charts
 ```
 
-The command deploys AWX on the Kubernetes cluster in the default configuration.
-The [configuration](#configuration) section lists the parameters that can be configured
-during installation.
+Install the chart:
 
-This charts embeds chart dependencies specified in the requirements.yaml file:
-
-- postgresql
-- memcached
-- rabbitmq
-
-**Note**: Currently, this chart is not ready to be used with external postgresql,
-memcached or rabbitmq. PR welcomed.
-
-## Uninstalling the Chart
-
-To uninstall/delete the `my-release` deployment:
-
-```console
-helm delete my-release
+```bash
+helm install adwerx/awx
 ```
 
-The command removes all the Kubernetes components associated with the chart
-and deletes the release.
+## Post-install
 
-## Configuration
+Ansible AWX includes process isolation by default for playbook runs (jobs). This cannot be accomplished inside of a container, which already has process isolation. Thus, you can turn off Job Isolation by following the instructions below:
 
-The following table lists the configurable parameters of the
-awx chart and their default values.
-Postgresql, memcached, rabbitmq charts values can be overridden in
-awx/values.yaml
+> **Disabling bubblewrap support:**
+> To disable bubblewrap support for running jobs (playbook runs only), ensure you are  logged in as the Admin user and click on the settings gear settings in the upper right-hand corner. Click on the “Configure Tower” box, then click on the “Jobs” tab. Scroll down until you see “Enable Job Isolation” and change the radio button selection to “off”.
 
-Parameter | Description | Default
---------- | ----------- | -------
-`replicaCount` | Pod replica count | `1`
-`awx_web.image.repository` |  | `ansible/awx_web`
-`awx_web.image.tag` |  | `2.1.2`
-`awx_web.image.pullPolicy` |  | `IfNotPresent`
-`awx_task.image.repository` |  | `ansible/awx_task`
-`awx_task.image.tag` |  | `2.1.2`
-`awx_task.image.pullPolicy` |  | `IfNotPresent`
-`awx_secret_key` |  | `awxsecret`
-`default_admin_user` |  | `admin`
-`default_admin_password` |  | `password`
-`deployment.annotations` |  | `{}`
-`service.internalPort` |  | `8052`
-`service.externalPort` |  | `8052`
-`ingress.enabled` |  | `false`
-`memcached.install` | Install memcached chart | `true`
-`rabbitmq.install` | Install rabbitmq chart | `true`
-`rabbitmq.rabbitmq.username` | Rabbitmq username | `awx`
-`rabbitmq.rabbitmq.password` | Rabbitmq password| `awx`
-`rabbitmq.rabbitmq.configuration` | Rabbitmq configuration file| cf values.yaml
-`postgresql.install` | Install postgresql chart | `true`
-`postgresql.postgresqlUsername` | postgresql username | `postgres`
-`postgresql.postgresqlPassword` | postgresql password | `awx`
-`postgresql.postgresqlDatabase` | postgresql database | `awx`
-`postgresql.persistence.enabled` | postgresql persistence | `true`
+## Values
 
+[see values.yaml](./values.yaml)

@@ -2,39 +2,70 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-replicaCount: 1
-
-# awx_web & tasks are deployed in the same pod
-awx_web:
+web:
   image:
     repository: ansible/awx_web
-    tag: 9.1.1
-    pullPolicy: Always
+    tag: 8.0.0
+    pullPolicy: IfNotPresent
+  replicaCount: 1
+  resources: {}
+    # We usually recommend not to specify default resources and to leave this as a conscious
+    # choice for the user. This also increases chances charts run on environments with little
+    # resources, such as Minikube. If you do want to specify resources, uncomment the following
+    # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+    # limits:
+    #  cpu: "1"
+    #  memory: "1Gi"
+    # requests:
+    #  cpu: "1"
+    #  memory: "1Gi"
+  extraVolumes: []
+  extraVolumeMounts: []
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
 
-awx_task:
+task:
   image:
     repository: ansible/awx_task
-    tag: 9.1.1
-    pullPolicy: Always
+    tag: 8.0.0
+    pullPolicy: IfNotPresent
+  replicaCount: 1
+  resources: {}
+    # We usually recommend not to specify default resources and to leave this as a conscious
+    # choice for the user. This also increases chances charts run on environments with little
+    # resources, such as Minikube. If you do want to specify resources, uncomment the following
+    # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+    # limits:
+    #  cpu: "1.5"
+    #  memory: "2Gi"
+    # requests:
+    #  cpu: "1.5"
+    #  memory: "2Gi"
+  nodeSelector: {}
+  tolerations: []
+  affinity: {}
 
-# AWX config
-awx_secret_key: awxsecret
+secret_key: awxsecret
 default_admin_user: admin
 default_admin_password: password
 
-
-deployment:
-  annotations: {}
+extraConfiguration: |-
+  # INSIGHTS_URL_BASE = "https://example.org"
 
 service:
-  internalPort: 8052
-  externalPort: 8052
+  type: ClusterIP
+  port: 8080
 
 ingress:
   enabled: false
+  # whether the default backend for this ingress should route to the awx service
+  defaultBackend: true
   # Used to create an Ingress record.
-  hosts:
-    - chart-example.local
+  hosts: []
+    # - host: chart-example.local
+    #   paths:
+    #     - "/"
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
@@ -44,76 +75,38 @@ ingress:
     #   hosts:
     #     - chart-example.local
 
-
 # Chart values https://github.com/helm/charts/blob/master/stable/memcached/values.yaml
 memcached:
-  install: true
+  enabled: true
 
 # Chart values https://github.com/helm/charts/blob/master/stable/rabbitmq/values.yaml
 rabbitmq:
-  install: true
-  persistence:
-    enabled: true
-    # storageClass: "-"
-    size: 8Gi
-    accessMode: ReadWriteOnce
+  enabled: true
   rabbitmq:
-    username: awx
-    password: awx
+    username: admin
+    password: amqpassword
+    # loadDefinition:
+    #   enabled: true
+    #   secretName: rabbitmq-load-definition
     ## Configution file content https://www.rabbitmq.com/configure.html#configuration-files
-    configuration: |-
-        ## Clustering
-        cluster_formation.peer_discovery_backend  = rabbit_peer_discovery_k8s
-        cluster_formation.k8s.host = kubernetes.default.svc.cluster.local
-        cluster_formation.node_cleanup.interval = 10
-        cluster_formation.node_cleanup.only_log_warning = false
-        cluster_partition_handling = autoheal
-        ## queue master locator
-        queue_master_locator=min-masters
-        ## enable guest user
-        loopback_users.guest = false
-        ## awx vhost
-        default_vhost = awx
-    ## RabbitMQ Max File Descriptors
-    ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
-    ## ref: https://www.rabbitmq.com/install-debian.html#kernel-resource-limits
-    ##
-    setUlimitNofiles: false
-    ulimitNofiles: '65536'
+    extraConfiguration: |-
+      default_vhost = awx
 
 # Chart values https://github.com/helm/charts/blob/master/stable/postgresql/values.yaml
 postgresql:
-  install: true
+  enabled: true
   image:
     registry: docker.io
     repository: bitnami/postgresql
     tag: 9.6
-  postgresqlUsername: postgres
-  postgresqlPassword: awx
+  postgresqlUsername: awx
+  postgresqlPassword: pgpassword
   postgresqlDatabase: awx
+  # Uncomment to use a different host for postgresql instance
+  # postgresqlHost:
   persistence:
     enabled: true
-    # storageClass: "-"
-    size: 8Gi
-    accessModes:
-      - ReadWriteOnce
+    # size: 50Gi
+  # resources: {}
   metrics:
     enabled: false
-
-resources: {}
-  # We usually recommend not to specify default resources and to leave this as a conscious
-  # choice for the user. This also increases chances charts run on environments with little
-  # resources, such as Minikube. If you do want to specify resources, uncomment the following
-  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-  # limits:
-  #  cpu: 100m
-  #  memory: 128Mi
-  # requests:
-  #  cpu: 100m
-  #  memory: 128Mi
-
-nodeSelector: {}
-
-tolerations: []
-
-affinity: {}
