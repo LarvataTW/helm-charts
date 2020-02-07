@@ -5,7 +5,7 @@
 web:
   image:
     repository: ansible/awx_web
-    tag: 8.0.0
+    tag: 9.1.1
     pullPolicy: IfNotPresent
   replicaCount: 1
   resources: {}
@@ -28,7 +28,7 @@ web:
 task:
   image:
     repository: ansible/awx_task
-    tag: 8.0.0
+    tag: 9.1.1
     pullPolicy: IfNotPresent
   replicaCount: 1
   resources: {}
