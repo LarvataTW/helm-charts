@@ -83,8 +83,8 @@ memcached:
 rabbitmq:
   enabled: true
   rabbitmq:
-    username: admin
-    password: amqpassword
+    username: awx
+    password: awx
     # loadDefinition:
     #   enabled: true
     #   secretName: rabbitmq-load-definition
@@ -99,8 +99,8 @@ postgresql:
     registry: docker.io
     repository: bitnami/postgresql
     tag: 9.6
-  postgresqlUsername: awx
-  postgresqlPassword: pgpassword
+  postgresqlUsername: postgres
+  postgresqlPassword: awx
   postgresqlDatabase: awx
   # Uncomment to use a different host for postgresql instance
   # postgresqlHost:

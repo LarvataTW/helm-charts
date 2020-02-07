@@ -66,12 +66,12 @@ rabbitmq:
   ## RabbitMQ application username
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
-  username: awx
+  username: user
 
   ## RabbitMQ application password
   ## ref: https://github.com/bitnami/bitnami-docker-rabbitmq#environment-variables
   ##
-  password: awx
+  # password:
   # existingPasswordSecret: name-of-existing-secret
 
   ## Erlang cookie to determine whether different nodes are allowed to communicate with each other
