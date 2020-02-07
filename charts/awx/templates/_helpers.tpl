@@ -39,6 +39,9 @@ Common volume mounts
   mountPath: "/etc/tower/settings.py"
   subPath: settings.py
   readOnly: true
+- name: nginx-conf
+  mountPath: "/etc/nginx/nginx.conf"
+  subPath: nginx.conf
 - name: confd
   mountPath: "/etc/tower/conf.d/"
   readOnly: true
@@ -58,6 +61,9 @@ Common volume definitions
     items:
       - key: settings.py
         path: settings.py
+- name: nginx-conf
+  configMap:
+    name: {{ include "awx.fullname" . }}-nginx-conf
 - name: secret-key
   secret:
     secretName: {{ include "awx.fullname" . }}-secret-key
