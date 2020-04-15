@@ -11,9 +11,9 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: http
+      nodePort: {{ .Values.service.port }}
       protocol: TCP
-      name: http
+      name: squid
   selector:
     app.kubernetes.io/name: {{ include "squid.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
