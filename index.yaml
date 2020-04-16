@@ -3,9 +3,9 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2020-02-13T10:08:03.976929474Z"
+    created: "2020-04-16T02:58:21.602752941Z"
     description: A Helm chart for Adminer
-    digest: 074134123e8e3fd28bcdf8a1be3e58e4e4f9287666868b70ad1d0f2af3cf7cea
+    digest: e39be028a28c7ef0566d28097518266d359ed9dfeaee9bc407d04feab2f1a135
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
@@ -17,11 +17,11 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.040963655Z"
+    created: "2020-04-16T02:58:21.739568006Z"
     description: AWX provides a web-based user interface, REST API, and task engine
       built on top of Ansible. It is the upstream project for Tower, a commercial
       derivative of AWX.
-    digest: 22cc3309cc446d567612e953bec88659ac503c5c0743101e00c096a55e0313ca
+    digest: 1053496639f9e4c3b258fc4d560bf1a6448ed6521739c3dbdbdae840c53a6bf8
     home: https://github.com/LarvataTW/helm-charts/tree/master/charts/awx
     icon: https://adwerx-public.s3.amazonaws.com/awx.png
     keywords:
@@ -44,7 +44,7 @@ entries:
     version: 2.3.3
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.038000928Z"
+    created: "2020-04-16T02:58:21.733797424Z"
     description: AWX provides a web-based user interface, REST API, and task engine
       built on top of Ansible. It is the upstream project for Tower, a commercial
       derivative of AWX.
@@ -71,7 +71,7 @@ entries:
     version: 2.3.2
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.034980101Z"
+    created: "2020-04-16T02:58:21.726403848Z"
     description: AWX provides a web-based user interface, REST API, and task engine
       built on top of Ansible. It is the upstream project for Tower, a commercial
       derivative of AWX.
@@ -98,7 +98,7 @@ entries:
     version: 2.3.1
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.030620562Z"
+    created: "2020-04-16T02:58:21.719056771Z"
     description: AWX provides a web-based user interface, REST API, and task engine
       built on top of Ansible. It is the upstream project for Tower, a commercial
       derivative of AWX.
@@ -125,7 +125,20 @@ entries:
     version: 2.3.0
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.00918937Z"
+    created: "2020-04-16T02:58:21.671755422Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 57349cc770b20b566da0b7a10447247cddf3558dc340217124cb4977838d5e8a
     name: awx
@@ -134,7 +147,20 @@ entries:
     version: 0.6.10
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.026806128Z"
+    created: "2020-04-16T02:58:21.71300059Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 7b33b910cc8fd1be06881eb1e45e4d7a5bcfb4f1585aaa32c1be495e8a2bf7b7
     name: awx
@@ -143,7 +169,20 @@ entries:
     version: 0.6.9
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.024674609Z"
+    created: "2020-04-16T02:58:21.706407611Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 8734b7f9f90ba6e2e26999a44084a0cfe6d849b7c36de46ea55f241497ba64d7
     name: awx
@@ -152,7 +191,20 @@ entries:
     version: 0.6.7
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.022450789Z"
+    created: "2020-04-16T02:58:21.696276643Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: c13d132a8990fc56a6493c8d7f7fdd4c316f21594d0d26f14cf54cde8a16b111
     name: awx
@@ -161,7 +213,20 @@ entries:
     version: 0.6.6
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.019488462Z"
+    created: "2020-04-16T02:58:21.691266059Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 2db0f52c90b17da11620dd82ed69f89f580bed29cd08f3eb441c2fab2a1b2053
     name: awx
@@ -170,7 +235,20 @@ entries:
     version: 0.6.5
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.016919439Z"
+    created: "2020-04-16T02:58:21.686426775Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: e37548eee02f4ececb91171b5b3fb8a4525a97a702222d5e967e01f725249a39
     name: awx
@@ -179,7 +257,20 @@ entries:
     version: 0.6.4
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.014010813Z"
+    created: "2020-04-16T02:58:21.681181392Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 2fd056c399bfe2d3c9daed508f4ec75e510189d2fd671e3849a39197247f8781
     name: awx
@@ -188,7 +279,20 @@ entries:
     version: 0.6.3
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.011708092Z"
+    created: "2020-04-16T02:58:21.676185907Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 952a4fa5a73f14c9faa6caa1ab5e16b8effb864dc9d49165fccfb3427e23491b
     name: awx
@@ -197,7 +301,20 @@ entries:
     version: 0.6.2
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.006831549Z"
+    created: "2020-04-16T02:58:21.666905737Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: f2bfcd5fc44a8792209c24cdd0869c34319814da41861edc9e62af1371f61701
     name: awx
@@ -206,7 +323,20 @@ entries:
     version: 0.6.1
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2020-02-13T10:08:04.003747321Z"
+    created: "2020-04-16T02:58:21.657466467Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 25f6a89d40a18d9b8dfaadb99ff8d0477bb5a0f700944a3741120b2046ec3278
     name: awx
@@ -215,7 +345,20 @@ entries:
     version: 0.6.0
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2020-02-13T10:08:04.000840094Z"
+    created: "2020-04-16T02:58:21.653603279Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: a5d5982c919dec57b814c47df6a1eed390af9b21b425fbad40babe96fb677819
     name: awx
@@ -224,7 +367,20 @@ entries:
     version: 0.5.1
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-02-13T10:08:03.998469572Z"
+    created: "2020-04-16T02:58:21.649799291Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 5.7.0
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 28d592d2af2abc392c61a1199b002acb31c6d7f4fcaa9678fd39d18d306baa7e
     name: awx
@@ -233,7 +389,20 @@ entries:
     version: 0.4.6
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-02-13T10:08:03.996157051Z"
+    created: "2020-04-16T02:58:21.645757304Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.12.1
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 2145920ce0d49891d847713ca2fdba38864663d006188f4ad3a89cb234ff74c6
     name: awx
@@ -242,7 +411,20 @@ entries:
     version: 0.4.5
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-02-13T10:08:03.993297825Z"
+    created: "2020-04-16T02:58:21.635282438Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 4.0.1
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 2170384a443b2f86380be4e8268916fd9f9420397f602297ea918193f9e375a5
     name: awx
@@ -251,7 +433,20 @@ entries:
     version: 0.4.4
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2020-02-13T10:08:03.989387689Z"
+    created: "2020-04-16T02:58:21.630006655Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 4.0.1
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: b3b5862607b70e62bde25283e8315d7f42c29e3809d0681a4019da9f03e263d3
     name: awx
@@ -260,7 +455,20 @@ entries:
     version: 0.4.3
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2020-02-13T10:08:03.986501462Z"
+    created: "2020-04-16T02:58:21.625414469Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 4.0.1
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: d3cf9d23022935459baa702bc4812d01fd3978659c791abb4790ea948955497c
     name: awx
@@ -269,7 +477,20 @@ entries:
     version: 0.4.2
   - apiVersion: v1
     appVersion: 9.0.0
-    created: "2020-02-13T10:08:03.983764937Z"
+    created: "2020-04-16T02:58:21.620043886Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 4.0.1
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 6e2b436dcb75f2f44677e0136209e533df2d2756d543541f97c6d55d3d08644f
     name: awx
@@ -278,7 +499,20 @@ entries:
     version: 0.4.1
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2020-02-13T10:08:03.981673218Z"
+    created: "2020-04-16T02:58:21.610791416Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 4.0.1
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: Install Ansible AWX
     digest: 6b3bd0f547d3166af054c221de74d1fea512d78b5011cd4bd9a4223affd36303
     name: awx
@@ -287,7 +521,20 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2020-02-13T10:08:03.979549598Z"
+    created: "2020-04-16T02:58:21.606815428Z"
+    dependencies:
+    - condition: rabbitmq.install
+      name: rabbitmq
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 4.0.1
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 3.7.1
+    - condition: memcached.install
+      name: memcached
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 2.4.0
     description: A Helm chart for Kubernetes
     digest: 073e9db599d906700e75fa3b322480f358b3385e05eb148236ff80d29128d764
     name: awx
@@ -297,16 +544,16 @@ entries:
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-02-13T10:08:04.041615361Z"
+    created: "2020-04-16T02:58:21.741507199Z"
     description: A Helm chart that install OpenProject
-    digest: fa75cd7a584aac66867abe98736540327a9addd2c809672f53be465e1e80a6f2
+    digest: c3215e50616cfae6516fbb42a60485c82357a2fcdede3883b16a95ce69cffe65
     name: openproject
     urls:
     - openproject-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-02-13T10:08:04.041306358Z"
+    created: "2020-04-16T02:58:21.740387403Z"
     description: A Helm chart that install OpenProject
     digest: fcb275dfd0ce378b259fe375ad0d8fa5e6f17ebaad704accee4607116322062c
     name: openproject
@@ -316,9 +563,9 @@ entries:
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2020-02-13T10:08:04.042262266Z"
+    created: "2020-04-16T02:58:21.742497596Z"
     description: A Helm chart for YACE exporter
-    digest: c671b88d7148fd1e429704fd442164897ece19acf37aafa3997e78c116380d65
+    digest: de0a0629d9bae633ad28e586e43c3bdbf2bbe7d62cb19a695431c28e3e0117de
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -337,10 +584,18 @@ entries:
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2020-02-13T10:08:04.047926617Z"
+    created: "2020-04-16T02:58:21.762607332Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.x.x
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://kubernetes-charts.storage.googleapis.com/
+      version: 6.x.x
     description: A flexible project management web application.
-    digest: d80da63cf79c8c2e339e9a8f1d7b90176de29d3e9a700df7dff4490b77f4b234
-    engine: gotpl
+    digest: 3f0469d8ec865b6879e4ef64797697ffe1c8bccc5dc88a3e7fc52ff958afa123
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
     keywords:
@@ -361,4 +616,18 @@ entries:
     urls:
     - redmine-12.2.12.tgz
     version: 12.2.12
-generated: "2020-02-13T10:08:03.976144667Z"
+  squid:
+  - apiVersion: v1
+    appVersion: 3.5.27-2
+    created: "2020-04-16T02:58:21.763110731Z"
+    description: A Helm chart for Squid
+    digest: 8044b7715815c2fd2ad4bd6a82c25b9ef407821c31873a0f737466c93b134661
+    home: http://www.squid-cache.org
+    maintainers:
+    - email: zx1986@gmail.com
+      name: zx1986
+    name: squid
+    urls:
+    - squid-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-04-16T02:58:21.601751545Z"
