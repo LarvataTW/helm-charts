@@ -27,8 +27,20 @@ spec:
             - name: squid
               containerPort: 3128
               protocol: TCP
+          volumeMounts:
+            - mountPath: /var/spool/squid
+              name: squid-cache
+            - mountPath: /etc/squid/squid.conf
+              subPath: squid.conf
+              name: {{ template "squid.fullname" . }}-conf
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
+      volumes:
+        - name: squid-cache
+          emptyDir: {}
+        - name: {{ template "squid.fullname" . }}-conf
+          configMap:
+            name: {{ template "squid.fullname" . }}-conf
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
