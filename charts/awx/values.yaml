@@ -83,6 +83,7 @@ memcached:
 rabbitmq:
   enabled: true
   rabbitmq:
+    setUlimitNofiles: false
     username: awx
     password: awx
     # loadDefinition:
