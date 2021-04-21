@@ -1,6 +1,6 @@
 apiVersion: v2
 name: awx
-description: Helm chart for AWX 14.1.0
+description: Helm chart for AWX 14.1.0 
 
 type: application
 
