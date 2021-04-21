@@ -3,9 +3,9 @@ entries:
   adminer:
   - apiVersion: v1
     appVersion: 4.7.3
-    created: "2021-04-21T07:21:25.789353943Z"
+    created: "2021-04-21T08:48:12.828353783Z"
     description: A Helm chart for Adminer
-    digest: eb7b0254d5dbffd99e268825e605bebce3220311cf9948d6dccd70003400e4e0
+    digest: dd2273723753ce860e0c9db96970c80c6c60324bc0dcb6fbbe6fe0acec54422e
     home: https://www.adminer.org
     maintainers:
     - email: garridomota@gmail.com
@@ -17,9 +17,9 @@ entries:
   awx:
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.907367311Z"
+    created: "2021-04-21T08:48:12.941324426Z"
     description: AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is the upstream project for Tower, a commercial derivative of AWX.
-    digest: 111eddfaf13f9470d72eebb63c70cad507a5e2c7708c86c283cfc4de301b5b91
+    digest: 418c9302831241d29a45d9eff9faa85e08e2bd76c7d2acb99ed206c1156e91ac
     home: https://github.com/LarvataTW/helm-charts/tree/master/charts/awx
     icon: https://adwerx-public.s3.amazonaws.com/awx.png
     keywords:
@@ -42,7 +42,7 @@ entries:
     version: 2.3.4
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.902775604Z"
+    created: "2021-04-21T08:48:12.936168488Z"
     description: AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is the upstream project for Tower, a commercial derivative of AWX.
     digest: 2b4cd16e8c19432e97ebb2d3b76c9b2b29cd9d250f6531fbbf4b4bec5e6a6733
     home: https://github.com/LarvataTW/helm-charts/tree/master/charts/awx
@@ -67,7 +67,7 @@ entries:
     version: 2.3.3
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.897597182Z"
+    created: "2021-04-21T08:48:12.930872951Z"
     description: AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is the upstream project for Tower, a commercial derivative of AWX.
     digest: d085c5949ceb9ab64891a18f763b32e308b6c5d53c46e7eacc77cd5f5a6554d3
     home: https://github.com/LarvataTW/helm-charts/tree/master/charts/awx
@@ -92,7 +92,7 @@ entries:
     version: 2.3.2
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.892550764Z"
+    created: "2021-04-21T08:48:12.925469816Z"
     description: AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is the upstream project for Tower, a commercial derivative of AWX.
     digest: 975121c71d34a8aefd14d28d4862ea643e77ebaa01a87726a536aa8a2942e1e5
     home: https://github.com/LarvataTW/helm-charts/tree/master/charts/awx
@@ -117,7 +117,7 @@ entries:
     version: 2.3.1
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.887977657Z"
+    created: "2021-04-21T08:48:12.921508864Z"
     description: AWX provides a web-based user interface, REST API, and task engine built on top of Ansible. It is the upstream project for Tower, a commercial derivative of AWX.
     digest: 27137868880206e7656bcb86b824b79ad0772f27d97d31f655ef5924ac0de4f7
     home: https://github.com/LarvataTW/helm-charts/tree/master/charts/awx
@@ -142,7 +142,7 @@ entries:
     version: 2.3.0
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.853782654Z"
+    created: "2021-04-21T08:48:12.88769477Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -164,7 +164,7 @@ entries:
     version: 0.6.10
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.883364948Z"
+    created: "2021-04-21T08:48:12.917057017Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -186,7 +186,7 @@ entries:
     version: 0.6.9
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.878285229Z"
+    created: "2021-04-21T08:48:12.913195164Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -208,7 +208,7 @@ entries:
     version: 0.6.7
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.874375837Z"
+    created: "2021-04-21T08:48:12.908105525Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -230,7 +230,7 @@ entries:
     version: 0.6.6
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.870417545Z"
+    created: "2021-04-21T08:48:12.903891375Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -252,7 +252,7 @@ entries:
     version: 0.6.5
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.866619556Z"
+    created: "2021-04-21T08:48:12.899984922Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -274,7 +274,7 @@ entries:
     version: 0.6.4
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.861651439Z"
+    created: "2021-04-21T08:48:12.896188168Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -296,7 +296,7 @@ entries:
     version: 0.6.3
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.857677746Z"
+    created: "2021-04-21T08:48:12.892059718Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -318,7 +318,7 @@ entries:
     version: 0.6.2
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.849887263Z"
+    created: "2021-04-21T08:48:12.883380222Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -340,7 +340,7 @@ entries:
     version: 0.6.1
   - apiVersion: v1
     appVersion: 9.1.1
-    created: "2021-04-21T07:21:25.844280932Z"
+    created: "2021-04-21T08:48:12.879692366Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -362,7 +362,7 @@ entries:
     version: 0.6.0
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2021-04-21T07:21:25.840486943Z"
+    created: "2021-04-21T08:48:12.874055634Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -384,7 +384,7 @@ entries:
     version: 0.5.1
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2021-04-21T07:21:25.836573751Z"
+    created: "2021-04-21T08:48:12.870675374Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -406,7 +406,7 @@ entries:
     version: 0.4.6
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2021-04-21T07:21:25.831773838Z"
+    created: "2021-04-21T08:48:12.866778121Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -428,7 +428,7 @@ entries:
     version: 0.4.5
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2021-04-21T07:21:25.824943678Z"
+    created: "2021-04-21T08:48:12.862548072Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -450,7 +450,7 @@ entries:
     version: 0.4.4
   - apiVersion: v1
     appVersion: 7.0.0
-    created: "2021-04-21T07:21:25.821282992Z"
+    created: "2021-04-21T08:48:12.858059526Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -472,7 +472,7 @@ entries:
     version: 0.4.3
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2021-04-21T07:21:25.817542804Z"
+    created: "2021-04-21T08:48:12.854563968Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -494,7 +494,7 @@ entries:
     version: 0.4.2
   - apiVersion: v1
     appVersion: 9.0.0
-    created: "2021-04-21T07:21:25.813702714Z"
+    created: "2021-04-21T08:48:12.851289007Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -516,7 +516,7 @@ entries:
     version: 0.4.1
   - apiVersion: v1
     appVersion: 9.0.1
-    created: "2021-04-21T07:21:25.808501892Z"
+    created: "2021-04-21T08:48:12.847245456Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -538,7 +538,7 @@ entries:
     version: 0.4.0
   - apiVersion: v1
     appVersion: 8.0.0
-    created: "2021-04-21T07:21:25.804722404Z"
+    created: "2021-04-21T08:48:12.841229928Z"
     dependencies:
     - condition: rabbitmq.install
       name: rabbitmq
@@ -560,14 +560,14 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 14.1.0
-    created: "2021-04-21T07:21:25.800922014Z"
+    created: "2021-04-21T08:48:12.83776797Z"
     dependencies:
     - condition: awx.database.builtIn.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 9.8.1
     description: Helm chart for AWX 14.1.0
-    digest: 4dc0b7b9cf378863e2e3be2b2d76870b6953e543a769dbb1aff419f1b5ee69f4
+    digest: 2267deffd059c04d8bea68dc43d56f4ec7198afa166f5f177528946092d5fffe
     maintainers:
     - email: lucas.hahn@novum-rgi.de
       name: Lucas Hahn
@@ -579,7 +579,7 @@ entries:
   awx-test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-21T07:21:25.907891124Z"
+    created: "2021-04-21T08:48:12.941928819Z"
     description: A Helm chart for Kubernetes
     digest: 04710204b84d7ffdb54812a7acd4a43342af53e2301c4b359ba2d1ad7bac760f
     name: awx-test
@@ -590,16 +590,16 @@ entries:
   openproject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-04-21T07:21:25.909067451Z"
+    created: "2021-04-21T08:48:12.949529027Z"
     description: A Helm chart that install OpenProject
-    digest: 2503dd1acc2dc6cc778d5960d10c937957877a6ec1886f6728872cd86d4963fc
+    digest: 7c5a2c741c3ae2e6a81d753d7bb6aa6d42b4a084770ebeb20d6871a632d015d3
     name: openproject
     urls:
     - openproject-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-04-21T07:21:25.908473137Z"
+    created: "2021-04-21T08:48:12.942595511Z"
     description: A Helm chart that install OpenProject
     digest: fcb275dfd0ce378b259fe375ad0d8fa5e6f17ebaad704accee4607116322062c
     name: openproject
@@ -609,9 +609,9 @@ entries:
   prometheus-yace-exporter:
   - apiVersion: v1
     appVersion: 0.13.7
-    created: "2021-04-21T07:21:25.909840369Z"
+    created: "2021-04-21T08:48:12.950569115Z"
     description: A Helm chart for YACE exporter
-    digest: 41efc39e6e90d4d28a48c8f6e2e081f55c429d5d463cf77984a3b6b79aa2abfa
+    digest: ad193a0db5672cd129aca086e37483b9f460f5cac031f6eae7b6e8430f687069
     home: https://github.com/ivx/yet-another-cloudwatch-exporter
     keywords:
     - aws
@@ -630,7 +630,7 @@ entries:
   redmine:
   - apiVersion: v1
     appVersion: 4.0.5
-    created: "2021-04-21T07:21:25.919553097Z"
+    created: "2021-04-21T08:48:12.958886815Z"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -641,7 +641,7 @@ entries:
       repository: https://charts.helm.sh/stable
       version: 6.x.x
     description: A flexible project management web application.
-    digest: bd22014b1d7c502afd458a8322ac16ecc162e1bc3c0409fb1f37cdcc27db6661
+    digest: 1703006ac25c37fe3eb583b3c08ba52af759183cf66efa9f9fb5703208585610
     home: http://www.redmine.org/
     icon: https://bitnami.com/assets/stacks/redmine/img/redmine-stack-220x234.png
     keywords:
@@ -665,9 +665,9 @@ entries:
   squid:
   - apiVersion: v1
     appVersion: 3.5.27-2
-    created: "2021-04-21T07:21:25.920003508Z"
+    created: "2021-04-21T08:48:12.95928211Z"
     description: A Helm chart for Squid
-    digest: 9e48bf70b2fe19465b496c3b52e02f10cb9ed6e7d877820de329b8d0d58dbea3
+    digest: ea0d3b74e5dacaaa95a965a3c36555bcdd4ef235bce25422e7c8c6513ab7ae27
     home: http://www.squid-cache.org
     maintainers:
     - email: zx1986@gmail.com
@@ -676,4 +676,4 @@ entries:
     urls:
     - squid-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-21T07:21:25.788642426Z"
+generated: "2021-04-21T08:48:12.82774459Z"
