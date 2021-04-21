@@ -16,3 +16,4 @@ dependencies:
     repository: https://charts.bitnami.com/bitnami
     version: 9.8.1
     condition: awx.database.builtIn.enabled
+
