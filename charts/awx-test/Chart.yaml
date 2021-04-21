@@ -6,7 +6,7 @@ type: application
 
 version: 0.1.6
 appVersion: 14.1.0
-
+home: https://github.com/LarvataTW/helm-charts/tree/master/charts/awx-test
 maintainers:
   - name: Lucas Hahn 
     email: lucas.hahn@novum-rgi.de
