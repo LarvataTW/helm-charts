@@ -1,7 +1,0 @@
-ingress:
-  enabled: true
-  defaultBackend: false
-  hosts:
-    - host: awx.example.com
-      paths:
-        - "/"

@@ -3,10 +3,7 @@ kind: Pod
 metadata:
   name: "{{ include "awx.fullname" . }}-test-connection"
   labels:
-    app.kubernetes.io/name: {{ include "awx.name" . }}
-    helm.sh/chart: {{ include "awx.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{ include "awx.labels" . | nindent 4 }}
   annotations:
     "helm.sh/hook": test-success
 spec:
