@@ -95,10 +95,8 @@ spec:
               key: MYSQL_PASS
         ports:
         - containerPort: 5353
-          name: dns-udp
           protocol: UDP
         - containerPort: 5353
-          name: dns-tcp
           protocol: TCP
         - containerPort: 8081
           name: api
