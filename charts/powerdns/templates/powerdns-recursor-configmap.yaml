@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "{{ template "powerdns.fullname" . }}-config"
+  labels:
+    powerdns.com/role: admin
+{{ include "powerdns.labels" . | indent 4 }}
+data:
+  hosts: |
+{{ .Values.pdns_recursor.hosts | indent 4 }}
+  zones: |
+{{ .Values.pdns_recursor.zones | indent 4 }}
+
